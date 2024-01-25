@@ -1,0 +1,49 @@
+.callout text {
+  font: 10px sans-serif;
+  font-weight: bold;
+  dominant-baseline: middle;
+
+  &.date {
+    font-size: 8px;
+    font-weight: normal;
+    color: '#bbb';
+  }
+}
+
+.x-axis,
+.y-axis {
+  color: #bbb;
+
+  .tick line {
+    opacity: 0.3;
+  }
+}
+
+.bars .bar {
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.line-chart {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .chart-title {
+    grid-area: chart-title;
+    z-index: 2;
+  }
+
+  .date-range {
+    grid-area: range-selector;
+    justify-self: end;
+    z-index: 2;
+  }
+
+  svg {
+    position: absolute;
+  }
+}

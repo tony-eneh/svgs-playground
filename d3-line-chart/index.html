@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Line Chart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="line-chart">
+      <h3 class="chart-title">Trends</h3>
+      <select name="date-range" id="date-range" title="Date Range selector" class="date-range">
+        <option value="0">Last 7 days</option>
+        <option value="1">Last 1 month</option>
+        <option value="2">Last 1 year</option>
+      </select>
+      <svg id="chart"></svg>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="main.js"></script>
+</html>
