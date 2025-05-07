@@ -47,3 +47,14 @@
     position: absolute;
   }
 }
+
+body {
+  background-image: repeating-linear-gradient(
+    rgb(164, 50, 50) 0px 1px,
+    rgba(0, 0, 0, 0) 1px 100px
+  ), repeating-linear-gradient(
+    to right,
+    rgb(164, 50, 50) 0px 1px,
+    rgba(0, 0, 0, 0) 1px 100px
+  );
+}
